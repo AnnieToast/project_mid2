@@ -1,62 +1,9 @@
-/* Hero Section */
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/image/hero.jpg');
-  background-size: cover;
-  color: white;
-  text-align: center;
-  padding: 50px 20px;
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+ 
+ 
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-}
 
-.hero .btn-primary {
-  background-color: #28a745;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
 
-.hero .btn-primary:hover {
-  background-color: #218838;
-}
-
-/* Product Grid */
-.product-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.product-image img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.hover-details {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.product-image:hover .hover-details {
-  opacity: 1;
-}
-
-.hover-details button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-}
