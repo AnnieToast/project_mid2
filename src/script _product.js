@@ -1,28 +1,36 @@
-let cart = [];
-
+// Add to Cart Functionality
 function addToCart(productName, country) {
-  cart.push({ name: productName, country });
-  updateCart();
-  alert(`${productName} has been added to your cart.`);
+  const cartList = document.getElementById("cartList");
+  const item = document.createElement("li");
+  item.textContent = `${productName} - ${country}`;
+  cartList.appendChild(item);
 }
 
-function updateCart() {
-  const cartList = document.getElementById('cartList');
-  cartList.innerHTML = '';
+// Filter Products
+function filterProducts() {
+  const searchInput = document.getElementById("searchBar").value.toLowerCase();
+  const category = document.getElementById("categoryFilter").value;
+  const country = document.getElementById("countryFilter").value;
+  const products = document.querySelectorAll(".product-card");
 
-  cart.forEach((item, index) => {
-    const listItem = document.createElement('li');
-    listItem.textContent = `${item.name} - ${item.country}`;
-    listItem.innerHTML += ` <button onclick="removeFromCart(${index})">Remove</button>`;
-    cartList.appendChild(listItem);
+  products.forEach((product) => {
+    const name = product.querySelector("h3").textContent.toLowerCase();
+    const productCategory = product.getAttribute("data-category");
+    const productCountry = product.getAttribute("data-country");
+
+    if (
+      (name.includes(searchInput) || searchInput === "") &&
+      (productCategory === category || category === "") &&
+      (productCountry === country || country === "")
+    ) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
   });
 }
 
-function viewProduct(name, details) {
-  alert(`${name}\n\nDetails: ${details}`);
-}
-
-function removeFromCart(index) {
-  cart.splice(index, 1);
-  updateCart();
+// View Product Details
+function viewProduct(title, details) {
+  alert(`Product: ${title}\nDetails: ${details}`);
 }
