@@ -34,3 +34,7 @@ function filterProducts() {
 function viewProduct(title, details) {
   alert(`Product: ${title}\nDetails: ${details}`);
 }
+
+function goToProductList() {
+  window.location.href = "productlist.html";
+}

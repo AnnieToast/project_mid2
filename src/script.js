@@ -26,3 +26,7 @@ function prevSlide() {
 setInterval(() => {
   nextSlide();
 }, 5000);
+
+function goToProductList() {
+  window.location.href = "productlist.html"
+   }

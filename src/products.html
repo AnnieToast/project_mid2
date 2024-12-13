@@ -7,6 +7,7 @@
   <title>Green Insurance Shop</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   
 </head>
 
@@ -26,48 +27,120 @@
     </div>
   </header>
   <!-- Life Insurance -->
-
-  
-  <section id="productsid" class="productsid">
-    <h2>Life Insurance</h2>
-    <div class="category-grid">
-      <div class="category">
-        <img src="/image/plan a.jpg" alt="Life Insurance">
-        <p>Plan A</p>
-        <p>ราคา :  20,000/เดือน</p>
-        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Buy Now</button>
-      </div>
-      <div class="category">
-        <img src="/image/plan b.jpg" alt="Life Insurance">
-        <p>Plan B</p>
-        <p>ราคา :  10,000/เดือน</p>
-        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Buy Now</button>
-      </div>
-      <div class="category">
-        <img src="/image/plan c.jpg" alt="Life Insurance">
-        <p>Plan C</p>
-        <p>ราคา :  5,000/เดือน</p>
-        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Buy Now</button>
-      </div>
-      <div class="category">
-        <img src="/image/plan d.jpg" alt="Life Insurance">
-        <p>Plan D</p>
-        <p>ราคา :  2,000/เดือน</p>
-        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Buy Now</button>
+  <section id="product-list" class="product-list py-10">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Life Insurance</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+       
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Life Insurance/plan a.jpg" alt="Plan A" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan A</h2>
+          <p>ราคา: 20,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 5 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()" class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
+      
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Life Insurance/plan b.jpg" alt="Plan B" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan B</h2>
+          <p>ราคา: 10,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 3 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()" class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
+       
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Life Insurance/plan c.jpg" alt="Plan C" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan C</h2>
+          <p>ราคา: 5,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 1 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()" class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
       </div>
     </div>
   </section>
-  
+  <!-- Health Insurance -->
+  <section id="product-list" class="product-list py-10">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Health Insurance </h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+       
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Health Insurance/plan a.jpg" alt="Plan A" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan A</h2>
+          <p>ราคา: 20,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 5 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()" class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
+      
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Health Insurance/plan b.jpg" alt="Plan B" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan B</h2>
+          <p>ราคา: 10,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 3 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()" class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
+       
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Health Insurance/plan c.jpg" alt="Plan C" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan C</h2>
+          <p>ราคา: 5,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 1 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()" class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-
-
-
-
-</section>
-
- 
-
+  <!-- Travel Insurance -->
+  <section id="product-list" class="product-list py-10">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold mb-6">Travel Insurance</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+       
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Travel Insurance/plan a.jpg" alt="Plan A" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan A</h2>
+          <p>ราคา: 20,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 5 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()" class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
+      
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Travel Insurance/plan b.jpg" alt="Plan B" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan B</h2>
+          <p>ราคา: 10,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 3 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()" class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now  <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
+       
+        <div class="border rounded-lg shadow-lg p-4">
+          <img src="/image/Travel Insurance/plan c.jpg" alt="Plan C" class="w-full h-48 object-cover mb-4 rounded">
+          <h2 class="text-xl font-bold">Plan C</h2>
+          <p>ราคา: 5,000/เดือน</p>
+          <p>คุ้มครองชีวิตสูงสุด: 1 ล้านบาท</p>
+          <button type="button" onclick="goToProductList()"  class="py-2.5 px-5 mt-4 w-full text-white bg-green-500 hover:bg-green-700 rounded-lg">
+            Buy Now <i class="fas fa-shopping-cart style='font-size:36px'"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -75,7 +148,13 @@
     </div>
   </footer>
 
-  <script src="scripts.js"></script>
+  <!-- <script src="script_product.js"></script> -->
+  <script>
+  function goToProductList() {
+  window.location.href = "productlist.html"
+   }
+
+  </script>   
 </body>
 
 </html>
